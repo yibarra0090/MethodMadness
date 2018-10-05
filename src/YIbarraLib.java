@@ -1,12 +1,28 @@
 public class YIbarraLib {
-    public static boolean isPalindrome(String strg) {
-        for (int i = 1; i < strg.length(); i++) {
-            String strg2 += strg.substring(strg.length() - i, (strg.indexOf(strg.length()) - i));
+    public static void isPalindrome(String strg) {
+        int len = strg.length();
+        String strg2 = "";
+        for (int i = 0; i < len; i++) {
+            strg2 = strg.substring(len - i, (len - i) + 2);
         }
-        if (strg2.compareTo(strg) == 0) {
-            return true;
+        if (strg.equals(strg2)) {
+            System.out.println("true");
         } else {
-            return false;
+            System.out.println("false");
         }
+    }
+    public static void dateStr(String date){
+        String month = date.substring(0,2);
+        String day = date.substring(3,5);
+        String year = date.substring(6);
+        String newdate = day+""+"-"+month+""+"-"+year;
+        System.out.println(newdate);
+    }
+    public static void sumUpTo(int n){
+        int sum = 0;
+        for (int i = 1; i <= n; i++){
+            sum += i;
+        }
+        System.out.println(sum);
     }
 }
