@@ -25,4 +25,5 @@ public class YIbarraLib {
         }
         System.out.println(sum);
     }
+    public
 }
