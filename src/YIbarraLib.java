@@ -1,4 +1,4 @@
-// Yussef Ibarra
+//*Yussef Ibarra
 public class YIbarraLib {
     /**
      *Checks if String input is a palindrome, a word, phrase, or sequence that reads the same backward as forward
