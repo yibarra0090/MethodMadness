@@ -62,7 +62,7 @@ public class YIbarraLib {
     public static String quadSolver(Double a, Double b, Double c){
         Double det = (b*b)+(-4*a*c);
         if (det < 0.0){
-            return "The roots are imaginary number becase the determinant is a negative number";
+            return "The roots are imaginary number because the determinant is a negative number";
         } else {
             Double x1 = (((-1 * b) + Math.sqrt(det)) / (2 * a));
             Double x2 = (((-1 * b) - Math.sqrt(det)) / (2 * a));
